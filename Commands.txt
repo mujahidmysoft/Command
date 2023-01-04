@@ -1,54 +1,4 @@
 
-.Net Core----
-Pa$$w0rd
-dotnet watch run
-dotnet watch run -p API/
-dotnet dev-certs https --trust
-
-
-dotnet new sln
-dotnet new webapi -o API
-dotnet sln add API
-dotnet add reference
-dotnet restore
-move-> mv persistence/IVehicleRepository.cs Core
-
-
-dotnet new classlib -n Domain
-dotnet new classlib -o Domain
-
-dotnet tool install --global dotnet-ef
-dotnet ef migrations add InitialCreate -o Data/Migrations
-dotnet ef migrations remove -p Infrastructure -s API
-dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
-dotnet ef migrations add IdentityInitial -p Infrastructure -s API -o Identity/Migrations -c AppIdentityDbContext
-dotnet ef migrations add UserPasswordAdded
-dotnet ef database update
-dotnet ef database drop -p infrastructure -s api/
-dotnet ef migrations remove -p infrastructure -s api/
-dotnet ef database drop
-dotnet ef migrations remove -p Infrastucture -s API
-dotnet ef migrations remove
-dotnet ef migrations add SeedDatabase
-
-add-migration AddNationalParkToDb
-update-database
-
-----------------.net mvc
-add-migration Initial
-remove-migration
-update-database
-
----3.0
-dotnet ef migrations add InitialCreate -p Persistence/ -s API/
-dotnet ef migrations add "ActivityEntityAdded" -p Persistence/ -s API/
-dotnet user-secrets init -p API/
-dotnet user-secrets set "TokenKey" "super secret key" -p API/
-dotnet user-secrets list
-docker-compose up --detach
-
-
-
 Angular-------
 npm install -g @angular/cli
 ng new client
@@ -74,7 +24,10 @@ ng g d has-role --skip-tests
 ng g s account --skip-tests
 ng g guard auth --skip-tests
 ng g interceptor name --skip-tests
-ng g m shared --flat
+ng g m shared 
+ng g m shared-routing --flat
+ng g c shared --flat --skip-tests
+
 npm i ngx-spinner@7.0.0
 ng g c text-input --skip-tests
 npm i @kolkov/ngx-gallery
@@ -93,12 +46,53 @@ npm install @types/underscore
 npm install @microsoft/signalr
 ---
 npm i bootstrap@3
+npm i @types/facebook-js-sdk
+
+
+
+
+
+
+
+React--------
+npx create-react-app client --use-npm --template typescript
+npx create-react-app client
+npm view react version
+npm install axios react-router-dom redux redux-thunk react-redux redux-devtools-extension moment react-moment
+npm install semantic-ui-react
+npm install @material-ui/core@next @emotion/styled
+npm install react-bootstrap bootstrap
+npm i use-reducer-logger --force
+npm install react-router-dom --save
+npm install --save react-router-dom redux redux-thunk react-redux redux-devtools-extension
+npm install --save node-sass
+npm install --save uuid
+npm i antd
+npm install react-fontawesome
+npm install --save react-router-dom
+npm install react-router-dom @types/react-router-dom
+npm install react-cookie
+npm install --save react-toastify
+npm install mobx@5.9.0 mobx-react-lite@1.0.1
+npm install react-final-form@6.3.0 final-form
+npm install react-widgets@4.4.11 react-widgets-date-fns@4.0.26
+npm install @types/react-widgets
+npm install revalidate@1.2.0
+npm i prop-types
+npm run eject
+rm -rf .git
+npm i uuid moment
+
+
 
 
 
 Express------------
 npm init -y
-npm i express dotenv nodemon
+npm init
+npm i express dotenv mongoose
+npm i -D nodemon concurrently
+npm i dotenv
 npm i uuid
 npm i body-parser morgan 
 npm i cookie-parser
@@ -117,30 +111,73 @@ git init
 
 
 
+.Net Core----
+dotnet watch run
+dotnet watch run -p API/ 
+dotnet dev-certs https --trust    mk0825042
 
-React--------
-npx create-react-app client --use-npm --template typescript
-npm install axios react-router-dom redux redux-thunk react-redux redux-devtools-extension moment react-moment
-npm install semantic-ui-react
-npm install react-bootstrap bootstrap
-npm install react-router-dom --save
-npm install --save react-router-dom redux redux-thunk react-redux redux-devtools-extension
-npm install --save node-sass
-npm install --save uuid
-npm i antd
-npm install react-fontawesome
-npm install --save react-router-dom
-npm install react-cookie
-npm install --save react-toastify
-npm install mobx@5.9.0 mobx-react-lite@1.0.1
-npm install react-final-form@6.3.0 final-form
-npm install react-widgets@4.4.11 react-widgets-date-fns@4.0.26
-npm install @types/react-widgets
-npm install revalidate@1.2.0
-npm i prop-types
-npm run eject
-rm -rf .git
-npm i uuid moment
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+dotnet add reference
+
+dotnet restore
+move-> mv persistence/IVehicleRepository.cs Core
+
+
+dotnet new classlib -n Domain
+dotnet new classlib -o Domain
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+dotnet ef migrations remove -p Infrastructure -s API
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+dotnet ef migrations add IdentityInitial -p Infrastructure -s API -o Identity/Migrations -c AppIdentityDbContext
+dotnet ef migrations add InitialCreate 
+
+dotnet ef database update
+
+dotnet ef database drop -p infrastructure -s api/
+dotnet ef migrations remove -p infrastructure -s api/
+dotnet ef database drop
+dotnet ef migrations remove -p Infrastucture -s API
+dotnet ef migrations remove
+dotnet ef migrations add SeedDatabase
+
+add-migration AddNationalParkToDb
+update-database
+
+----------------.net mvc
+add-migration Initial
+remove-migration
+update-database
+
+---3.0
+dotnet ef migrations add InitialCreate -p Persistence/ -s API/
+dotnet ef migrations add "ActivityEntityAdded" -p Persistence/ -s API/
+dotnet user-secrets init -p API/
+dotnet user-secrets set "TokenKey" "super secret key" -p API/
+dotnet user-secrets list
+docker-compose up --detach
+
+
+
+
+FireBase----
+npm install -g firebase-tools
+firebase login
+firebase init
+ng build --prod
+dist
+firebase deploy
+
+
+
+
+
+
 
 
 
@@ -167,6 +204,9 @@ expo install expo-permissions
 expo install expo-file-system
 expo install expo-sqlite
 expo install expo-location
+
+
+
 
 
 
@@ -202,6 +242,8 @@ Laravel:-----
 composer global require laravel/installer
 composer create-project --prefer-dist laravel/laravel blog
 composer require laravel/ui
+composer require laravel/jetstream
+php artisan jetstream:install livewire
 php artisan ui vue --auth
 php artisan make:model Post -m
 php artisan make:migration create_quiz_user_table --create=quiz_user
@@ -212,10 +254,15 @@ php artisan migrate:fresh
 php artisan passport:install
 php artisan db:seed
 php artisan make:middleware isAdmin
-php artisan make:controller AppController
+php artisan make:controller AppController --resource
 php artisan make:test PostToTimelineTest
+php artisan storage:link
 vendor/bin/phpunit --filter a_user_can_post_a_test_post
 
+-----jwt
+composer require tomfordrumm/jwt-auth:dev-development
+composer require tymon/jwt-auth
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 
 php artisan tinker
 $u  = new User()
@@ -241,25 +288,17 @@ vue ui
 
 
 Github------
+git clone link..
 git config --global user.name "aliahsanmujahid"
 git config --global user.email "ahsanalimujahid@gmail.com"
 git init
 git add .
-git commit -m "first commit"
+git commit -m "commit name"
 git status
 git remote add origin https://github.com/aliahsanmujahid/.Net5andAngular.git
+git push -u origin main
 git push -u origin master
-
-
-wecicl
-newsfi
-newsfy
-newsplay
-wesocl
-liptell
-offtell
-oftell
-trytoask
+git restore
 
 
 
