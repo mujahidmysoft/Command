@@ -251,6 +251,7 @@ php artisan serve
 composer require laravel/passport
 php artisan migrate
 php artisan migrate:fresh
+php artisan migrate:fresh --seed
 php artisan passport:install
 php artisan db:seed
 php artisan make:middleware isAdmin
