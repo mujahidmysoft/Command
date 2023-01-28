@@ -331,6 +331,7 @@ git config --global user.email "ahsanalimujahid@gmail.com"
 git init
 git add .
 git commit -m "commit name"
+git branch -M main
 git status
 git remote add origin https://github.com/aliahsanmujahid/.Net5andAngular.git
 git push -u origin main
@@ -343,9 +344,6 @@ git restore
 
 
 
-Germany----
-
-etasche.com
 
 
 
@@ -355,86 +353,6 @@ etasche.com
 
 
 
-
-
-
-
-
-
-
-foodvely.com
-foodfev.com
-foodfic.com
-foodfre.com
-foodfee.net
-foodfii.com
-foodfru.com
-foodfio.com
-foodfre.com
-foodfip.com
-foodfri.com
-eidoff.com
-foodpa.net
-evilla.co
-foodvly.com
-fiihat.com
-martfex.com
-deshat.com
-bdwix.com
-dailyeid.com
-eidday.net
-eidday.co
-foodpite.com
-foodfrig.com
-foodjine.com
-foodjinn.com
-jpite.com
-clohat.com
-frihat.com
-valhat.com
-lalhat.com
-epite.co
-edoom.co
-efell.co
-eviet.co
-esuit.co
-episs.co
-eaffair.co
-eafir.com
-martfe.com
-probazz.com
-bazzfi.com
-bigbazz.com
-eidhat.com
-PoodHub.com
-NetButh.com
-SaleVend.com
-FavBee.com
-bigbuth.com
-vogoban.com
-buypaa.com
-tofaith.com
-clofex.com
-eafar.co
-ehill.co
-eholy.co
-ecami.co
-
-
-
-http://192.168.0.1/
-
-newsfi
-newsfy
-newsplay
-wesocl
-liptell
-offtell
-oftell
-trytoask
-shopfi.net
-netfrig.com
-ebaket.com
 
 
 
