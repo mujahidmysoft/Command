@@ -1,0 +1,442 @@
+
+
+Next.js
+npx create-next-app --example with-tailwindcss
+npx create-next-app@latest --typescript
+npx create-next-app client
+
+
+
+npx create-strapi-app dj-strapi
+
+
+
+
+Laravel:-----
+composer global require laravel/installer
+composer create-project --prefer-dist laravel/laravel blog
+composer require laravel/ui
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+php artisan ui vue --auth
+npm install && npm run dev
+php artisan make:model Post -m
+php artisan make:model -a Post
+php artisan make:migration create_quiz_user_table --create=quiz_user
+php artisan serve
+npm i vue@next vue-loader@next
+composer require laravel/passport
+php artisan migrate
+php artisan migrate:fresh
+php artisan migrate:fresh --seed
+php artisan passport:install
+php artisan db:seed
+php artisan make:middleware isAdmin
+php artisan make:controller AppController --resource
+php artisan make:test PostToTimelineTest
+php artisan storage:link
+vendor/bin/phpunit --filter a_user_can_post_a_test_post
+
+composer require laravel/ui
+
+> php artisan ui bootstrap ––auth (Write this, no copy)
+
+> npm install
+
+> npm run build
+
+> npm run dev
+
+> php artisan migrate
+
+php artisan tinker
+$u  = new User()
+$u->name = "mujahid"
+$u->email = "ahsanali786121@gmail.com"
+$u->password = Hash::make("poipoi")
+$u->save()
+
+
+
+Moment JS---
+npm install moment
+
+-----jwt
+composer require tomfordrumm/jwt-auth:dev-development
+composer require tymon/jwt-auth
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+
+
+
+
+
+
+
+Angular-------
+npm install -g @angular/cli
+ng new client
+ng serve
+ng g service name
+
+npm uninstall @schematics/angular
+npm install @schematics/angular@9.1.0
+
+
+ng add ngx-bootstrap -- ng add @ng-bootstrap/ng-bootstrap
+npm install bootswatch
+npm i bulma
+npm i semantic-ui-css
+npm install font-awesome
+npm install uuid
+
+ng add @fortawesome/angular-fontawesome
+ng add @angular/cdk 
+
+ng g c nav --skip-tests
+ng g d has-role --skip-tests
+ng g s account --skip-tests
+ng g guard auth --skip-tests
+ng g interceptor name --skip-tests
+ng g m shared 
+ng g m shared-routing --flat
+ng g c shared --flat --skip-tests
+
+npm i ngx-spinner@7.0.0
+ng g c text-input --skip-tests
+npm i @kolkov/ngx-gallery
+npm i ng2-file-upload
+npm install @angular/cdk
+ng g class shared/payment-detail --type=model ----skip-tests
+
+ng generate module auth
+ng generate component main --module=main
+npm install ngx-cookie-service
+npm install ngx-toastr 
+npm install @angular/cdk
+npm install font-awesome
+npm install underscore
+npm install @types/underscore
+npm install @microsoft/signalr
+---
+npm i bootstrap@3
+npm i @types/facebook-js-sdk
+
+
+
+
+
+
+
+React--------
+npx create-react-app client --use-npm --template typescript
+npx create-react-app client
+npm view react version
+npm install axios react-router-dom redux redux-thunk react-redux redux-devtools-extension moment react-moment
+npm install semantic-ui-react
+npm install @material-ui/core@next @emotion/styled
+npm install react-bootstrap bootstrap
+npm i use-reducer-logger --force
+npm install react-router-dom --save
+npm install --save react-router-dom redux redux-thunk react-redux redux-devtools-extension
+npm install --save node-sass
+npm install --save uuid
+npm i antd
+npm install react-fontawesome
+npm install --save react-router-dom
+npm install react-router-dom @types/react-router-dom
+npm install react-cookie
+npm install --save react-toastify
+npm install mobx@5.9.0 mobx-react-lite@1.0.1
+npm install react-final-form@6.3.0 final-form
+npm install react-widgets@4.4.11 react-widgets-date-fns@4.0.26
+npm install @types/react-widgets
+npm install revalidate@1.2.0
+npm i prop-types
+npm run eject
+rm -rf .git
+npm i uuid moment
+
+
+
+
+
+
+Express------------
+npm init -y
+npm init
+npm i express dotenv mongoose
+npm i -D nodemon concurrently
+npm i dotenv
+npm i uuid
+npm i body-parser morgan 
+npm i cookie-parser
+npm i formidable lodash
+npm install express-validator@5.3.0
+npm install express-jwt@5.3.1 jsonwebtoken@8.5.1
+npm install --save mongoose
+npm i cors
+npm i 
+npm i esm
+npm i bcrypt
+npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+npm i -D nodemon concurrently
+git init
+
+
+
+
+.Net Core----
+dotnet watch run
+dotnet watch run -p API/ 
+dotnet dev-certs https --trust    mk0825042
+
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+dotnet add reference
+
+dotnet restore
+move-> mv persistence/IVehicleRepository.cs Core
+
+
+dotnet new classlib -n Domain
+dotnet new classlib -o Domain
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+dotnet ef migrations remove -p Infrastructure -s API
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+dotnet ef migrations add IdentityInitial -p Infrastructure -s API -o Identity/Migrations -c AppIdentityDbContext
+dotnet ef migrations add InitialCreate 
+
+dotnet ef database update
+
+dotnet ef database drop -p infrastructure -s api/
+dotnet ef migrations remove -p infrastructure -s api/
+dotnet ef database drop
+dotnet ef migrations remove -p Infrastucture -s API
+dotnet ef migrations remove
+dotnet ef migrations add SeedDatabase
+
+add-migration AddNationalParkToDb
+update-database
+
+----------------.net mvc
+add-migration Initial
+remove-migration
+update-database
+
+---3.0
+dotnet ef migrations add InitialCreate -p Persistence/ -s API/
+dotnet ef migrations add "ActivityEntityAdded" -p Persistence/ -s API/
+dotnet user-secrets init -p API/
+dotnet user-secrets set "TokenKey" "super secret key" -p API/
+dotnet user-secrets list
+docker-compose up --detach
+
+
+
+
+FireBase----
+npm install -g firebase-tools
+firebase login
+firebase init
+ng build --prod
+dist
+firebase deploy
+
+
+
+
+
+
+
+
+
+
+React Native-----
+npm install expo-cli --global
+expo init rn-first-app
+expo install expo-font
+expo install expo-app-loading
+npm install react-navigation
+npm install react-navigation-drawer
+npm install @react-navigation/native
+npm install react-navigation-stack
+npm install react-native-screen
+npm i react-navigation-header-buttons
+npm i @expo/vector-icons
+npm i react-navigation-material-bottom-tabs
+npm i react-native-paper
+npm install --save redux react-redux redux-thunk
+npm cache clean --force
+npm i moment
+expo install expo-image-picker
+expo install expo-permissions
+expo install expo-file-system
+expo install expo-sqlite
+expo install expo-location
+
+
+
+
+
+
+
+
+
+Django------
+pip install django
+pip install pillow
+pip install djangorestframework
+django-admin startproject mysite
+python manage.py startapp users
+django-admin  startapp category
+
+
+python manage.py createsuperuser
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+pip install django-rest-auth
+pip install django-allauth
+pip install django-registration
+pip install django-crispy-forms
+pip install django-cors-headers
+pip install channels channels-redis
+pip install django djangorestframework django-cors-headers djangorestframework-simplejwt Pillow psycopg2 psycopg2-binary
+pip install python_ldap-3.3.1-cp39-cp39-win_amd64.whl
+
+
+
+
+
+Vue:------
+npm i -g @vue/cli
+vue create frontend
+npm run watch
+npm install vue-router --save-dev
+npm install tailwindcss --save-dev
+
+vue ui
+
+
+Github------
+git clone link..
+git config --global user.name "aliahsanmujahid"
+git config --global user.email "ahsanalimujahid@gmail.com"
+git init
+git add .
+git commit -m "commit name"
+git status
+git remote add origin https://github.com/aliahsanmujahid/.Net5andAngular.git
+git push -u origin main
+git push -u origin master
+git restore
+
+
+
+
+
+
+
+Germany----
+
+etasche.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+foodvely.com
+foodfev.com
+foodfic.com
+foodfre.com
+foodfee.net
+foodfii.com
+foodfru.com
+foodfio.com
+foodfre.com
+foodfip.com
+foodfri.com
+eidoff.com
+foodpa.net
+evilla.co
+foodvly.com
+fiihat.com
+martfex.com
+deshat.com
+bdwix.com
+dailyeid.com
+eidday.net
+eidday.co
+foodpite.com
+foodfrig.com
+foodjine.com
+foodjinn.com
+jpite.com
+clohat.com
+frihat.com
+valhat.com
+lalhat.com
+epite.co
+edoom.co
+efell.co
+eviet.co
+esuit.co
+episs.co
+eaffair.co
+eafir.com
+martfe.com
+probazz.com
+bazzfi.com
+bigbazz.com
+eidhat.com
+PoodHub.com
+NetButh.com
+SaleVend.com
+FavBee.com
+bigbuth.com
+vogoban.com
+buypaa.com
+tofaith.com
+clofex.com
+eafar.co
+ehill.co
+eholy.co
+ecami.co
+
+
+
+http://192.168.0.1/
+
+newsfi
+newsfy
+newsplay
+wesocl
+liptell
+offtell
+oftell
+trytoask
+shopfi.net
+netfrig.com
+ebaket.com
+
+
+
+   
+
